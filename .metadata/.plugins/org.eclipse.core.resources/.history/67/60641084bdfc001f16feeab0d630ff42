@@ -1,0 +1,52 @@
+package com.spr;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class GetUsers extends HttpServlet
+{
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		String query = "Select * From users";
+		
+		try {
+			Connection con = Jdbc.getConnection();
+			PreparedStatement psmt = con.prepareStatement(query);
+			
+			resp.setContentType("application/json");
+			
+			PrintWriter out = resp.getWriter();
+			
+			out.append("[");
+			ResultSet rs = psmt.executeQuery();
+			
+			while(rs.next())
+			{
+				out.append("{ "
+						+ "name:" + rs.getString("name")
+						+"email:" + rs.getString("email")
+				       + "}");
+			}
+			
+			out.append("]");
+			out.close();
+			psmt.close();
+			con.close();
+			
+		} 
+		catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,72 @@
+package com.spr.hibernate;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class HibernateDMLExample {
+    public static void main(String[] args) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+
+        try {
+            Employee emp = new Employee();
+            emp.setName("John Doe");
+            emp.setSalary(50000);
+
+            session.save(emp); // Use session.persist(emp) for JPA compliance
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
+    
+    public static void update(String[] args) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+
+        try {
+            int empId = 1;
+            Employee emp = session.get(Employee.class, empId);
+            if (emp != null) {
+                emp.setSalary(60000);
+                emp.setEmail("abc@gmail.com");
+                session.update(emp); // Use session.merge(emp) if the object is detached
+
+                transaction.commit();
+            } else {
+                System.out.println("Employee not found!");
+            }
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
+    
+    public static void delete(String[] args) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+
+        try {
+            int empId = 1;
+            Employee emp = session.get(Employee.class, empId);
+            if (emp != null) {
+                session.delete(emp);
+                transaction.commit();
+            } else {
+                System.out.println("Employee not found!");
+            }
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
+}
+

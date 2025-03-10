@@ -1,0 +1,20 @@
+package com.spr;
+
+import java.sql.Connection;
+
+public class Jdbc 
+{
+	private String url = "jdbc:mysql://localhost:3306/testDb";
+	private String user = "root";
+	private String password = "Spr@6149";
+	
+	private Connection con;
+	
+	publicJdbc
+ 
+	public static Connection getConnection()
+	{
+		
+		return null;
+	}
+}

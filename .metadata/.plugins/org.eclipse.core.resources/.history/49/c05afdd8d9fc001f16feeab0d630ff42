@@ -1,0 +1,15 @@
+
+
+package com.spr.services;
+
+import com.spr.dao.UserDAO;
+import com.spr.model.User;
+import java.util.List;
+
+public class UserService {
+    private UserDAO userDAO = new UserDAO(); // DAO instance
+
+    public List<User> getUsers() {
+        return userDAO.getAllUsers(); // Fetching from DB
+    }
+}

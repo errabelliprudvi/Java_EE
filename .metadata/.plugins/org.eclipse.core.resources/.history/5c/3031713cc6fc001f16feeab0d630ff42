@@ -1,0 +1,18 @@
+package com.spr.io;
+
+import jakarta.servlet.annotation.MultipartConfig;
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/upload")
+@MultipartConfig
+public class UploadServlet extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Part filePart = req.getPart("file");
+        String fileName = filePart.getSubmittedFileName();
+        String uploadPath = "C:/uploads/" + fileName;
+        
+        filePart.write(uploadPath);
+        resp.getWriter().write("File uploaded successfully: " + fileName);
+    }
+}

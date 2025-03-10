@@ -1,0 +1,28 @@
+package com.spr.io;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/download")
+public class DownloadServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String fileName = req.getParameter("file");
+        File file = new File("C:/uploads/" + fileName);
+        
+        if (file.exists()) {
+            resp.setContentType("application/octet-stream");
+            resp.setHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\"");
+            
+            try (FileInputStream fis = new FileInputStream(file);
+                 OutputStream os = resp.getOutputStream()) {
+                byte[] buffer = new byte[1024];
+                int bytesRead;
+                while ((bytesRead = fis.read(buffer)) != -1) {
+                    os.write(buffer, 0, bytesRead);
+                }
+            }
+        } else {
+            resp.getWriter().write("File not found");
+        }
+    }
+}

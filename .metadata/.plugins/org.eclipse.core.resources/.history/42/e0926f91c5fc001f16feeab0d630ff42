@@ -1,0 +1,26 @@
+package com.spr;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/users")
+public class UserServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        List<User> users = new ArrayList<>();
+
+        try (Connection con = Jdbc.getConnection();
+             PreparedStatement psmt = con.prepareStatement("SELECT * FROM users");
+             ResultSet rs = psmt.executeQuery()) {
+
+            while (rs.next()) {
+                users.add(new User(rs.getString("name"), rs.getString("email")));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        req.setAttribute("users", users);
+        req.getRequestDispatcher("users.jsp").forward(req, resp);
+    }
+}

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+locationorg.eclipse.jst.server.tomcat.runtime.100=/home/prudvi/Downloads/eclipse-jee-2024-12-R-linux-gtk-x86_64/eclipse/apache-tomcat-10.0.27
+locationorg.eclipse.jst.server.tomcat.runtime.110=/opt/tomcat
+locationorg.eclipse.jst.server.tomcat.runtime.60=/home/prudvi/Downloads/eclipse-jee-2024-12-R-linux-gtk-x86_64/eclipse/tomcat/apache-tomcat-6.0.37

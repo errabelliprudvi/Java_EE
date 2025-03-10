@@ -1,0 +1,48 @@
+package com.spr.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Rewise 
+{
+
+	
+	public static void main(String[] args)
+	{
+		String url = "jdbc:mysql://localhost:3306/testDb";
+		String user = "root";
+		String password = "Spr@6149";
+				
+		try 
+		{
+			Connection con = DriverManager.getConnection(url, user, password);
+			
+			Statement stmt = con.createStatement();
+			
+			//String query = "Select * from users";
+			String query = "update users set name = \"prudvi\" where user_id = 12 ";
+			//ResultSet rs = stmt.executeQuery(query);
+			int rs = stmt.executeUpdate(query);
+			
+			System.out.println(rs);
+			
+//			while(rs.next())
+//			{
+//				System.out.println(rs);
+//			}
+//			
+//			rs.close();
+			stmt.close();
+			con.close();
+		} 
+		catch (SQLException e)
+		{
+			
+			e.printStackTrace();
+		}
+		
+	}
+}

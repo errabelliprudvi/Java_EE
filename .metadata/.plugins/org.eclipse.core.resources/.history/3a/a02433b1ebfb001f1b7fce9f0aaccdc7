@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo</title>
+</head>
+<body>
+<form action="add">
+<input type="text" >
+<input type = "text">
+</form>
+Hello HTML
+</body>
+</html>

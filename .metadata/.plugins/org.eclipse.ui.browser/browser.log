@@ -1,0 +1,141 @@
+
+Mar 08, 2025 24:38:37.86 NEW SESSION
+Mar 08, 2025 24:38:37.87 Opening in existing browser session.
+Mar 08, 2025 24:43:51.71 Opening in existing browser session.
+Mar 08, 2025 24:59:17.32 Opening in existing browser session.
+Mar 08, 2025 24:59:59.54 Opening in existing browser session.
+
+Mar 08, 2025 12:31:04.74 NEW SESSION
+Mar 08, 2025 12:31:04.78 Opening in existing browser session.
+Mar 08, 2025 12:49:22.72 Opening in existing browser session.
+Mar 08, 2025 12:49:44.46 Opening in existing browser session.
+Mar 08, 2025 12:52:58.77 Opening in existing browser session.
+Mar 08, 2025 12:56:07.75 Opening in existing browser session.
+Mar 08, 2025 12:59:22.83 Opening in existing browser session.
+Mar 08, 2025 13:01:47.70 Opening in existing browser session.
+Mar 08, 2025 13:04:48.99 Opening in existing browser session.
+Mar 08, 2025 13:06:39.88 Opening in existing browser session.
+Mar 08, 2025 13:07:20.13 Opening in existing browser session.
+Mar 08, 2025 13:09:33.83 Opening in existing browser session.
+Mar 08, 2025 13:10:14.38 Opening in existing browser session.
+Mar 08, 2025 13:11:24.42 Opening in existing browser session.
+Mar 08, 2025 13:22:55.30 Opening in existing browser session.
+
+Mar 08, 2025 16:19:21.01 NEW SESSION
+Mar 08, 2025 16:19:21.03 [7619:7619:0308/161921.012955:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not part of the idle inhibition specification: https://specifications.freedesktop.org/idle-inhibit-spec/latest/
+Mar 08, 2025 16:19:23.08 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 08, 2025 16:19:23.08 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Mar 08, 2025 16:19:24.08 [7669:7669:0308/161924.084649:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+Mar 08, 2025 16:19:25.23 [7669:7669:0308/161925.230737:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+Mar 08, 2025 16:19:34.20 [7619:7650:0308/161934.205780:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 08, 2025 16:19:43.37 [7669:7669:0308/161943.373004:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+Mar 08, 2025 16:19:59.66 [7619:7650:0308/161959.660808:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 08, 2025 16:20:51.35 [7619:7619:0308/162051.350261:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 08, 2025 16:21:04.25 [7619:7650:0308/162104.252366:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 08, 2025 16:22:20.90 Warning: Old MapAsync APIs are deprecated. If using C please pass a CallbackInfo struct that has two userdatas. Otherwise, if using C++, please use templated helpers.
+Mar 08, 2025 16:22:51.79 [7619:7650:0308/162251.799556:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 08, 2025 16:26:21.83 [7619:7650:0308/162621.830439:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 08, 2025 16:33:40.07 [7619:7650:0308/163340.074528:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 08, 2025 18:14:52.54 [7619:7650:0308/181452.540020:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Mar 08, 2025 18:14:52.62 [7619:7650:0308/181452.624985:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+Mar 08, 2025 18:43:52.20 [7619:7650:0308/184352.205710:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Mar 08, 2025 19:36:36.00 [7619:7650:0308/193636.002893:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Mar 08, 2025 19:52:46.46 [7619:7650:0308/195246.459974:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Mar 08, 2025 20:07:35.06 [7619:7650:0308/200735.063215:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Mar 08, 2025 21:46:11.50 [7619:7619:0308/214611.508635:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 08, 2025 22:02:57.03 [7619:7619:0308/220257.038984:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 08, 2025 22:03:14.23 [7619:7619:0308/220314.237879:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 08, 2025 22:23:04.43 [7619:7619:0308/222304.434182:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 08, 2025 22:53:29.41 [7619:7619:0308/225329.411783:ERROR:interface_endpoint_client.cc(725)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+Mar 09, 2025 12:29:54.71 NEW SESSION
+Mar 09, 2025 12:29:54.74 [7256:7256:0309/122954.714700:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not part of the idle inhibition specification: https://specifications.freedesktop.org/idle-inhibit-spec/latest/
+Mar 09, 2025 12:29:57.36 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 09, 2025 12:29:57.36 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Mar 09, 2025 12:29:57.44 [7256:7287:0309/122957.441253:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 09, 2025 12:30:03.83 [7306:7306:0309/123003.837198:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+Mar 09, 2025 12:30:19.50 [7256:7287:0309/123019.503356:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 09, 2025 12:30:36.05 [7306:7306:0309/123036.057344:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+Mar 09, 2025 12:30:36.06 [7306:7306:0309/123036.065726:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+Mar 09, 2025 12:31:14.24 [7256:7287:0309/123114.249124:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 09, 2025 12:32:54.35 Warning: Old MapAsync APIs are deprecated. If using C please pass a CallbackInfo struct that has two userdatas. Otherwise, if using C++, please use templated helpers.
+Mar 09, 2025 12:33:14.03 [7256:7287:0309/123314.030516:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 09, 2025 12:34:24.45 [7256:7256:0309/123424.450190:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 12:36:06.43 [7256:7287:0309/123606.432113:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 09, 2025 12:37:04.38 [7256:7256:0309/123704.384725:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 12:37:23.32 [7308:7314:0309/123723.320435:ERROR:ssl_client_socket_impl.cc(876)] handshake failed; returned -1, SSL error code 1, net_error -101
+Mar 09, 2025 12:37:32.70 [7308:7314:0309/123732.707403:ERROR:ssl_client_socket_impl.cc(876)] handshake failed; returned -1, SSL error code 1, net_error -101
+Mar 09, 2025 12:42:48.86 [7256:7287:0309/124248.862279:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 09, 2025 12:52:43.76 Opening in existing browser session.
+Mar 09, 2025 13:02:09.60 Opening in existing browser session.
+Mar 09, 2025 13:32:18.92 Opening in existing browser session.
+Mar 09, 2025 16:01:19.56 [7256:7256:0309/160119.568604:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 17:07:27.68 Opening in existing browser session.
+Mar 09, 2025 17:07:27.73 Fontconfig error: Cannot load default config file: No such file: (null)
+Mar 09, 2025 17:07:27.75 [7256:7256:0309/170727.751372:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 17:08:44.02 Opening in existing browser session.
+Mar 09, 2025 17:13:20.04 Opening in existing browser session.
+Mar 09, 2025 17:32:43.28 [7256:7287:0309/173243.279373:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Mar 09, 2025 20:49:32.78 [7256:7282:0309/204932.786956:ERROR:get_updates_processor.cc(266)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Mar 09, 2025 20:51:48.05 [7256:7287:0309/205148.057550:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Mar 09, 2025 21:07:25.19 [7256:7287:0309/210725.197198:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Mar 09, 2025 22:27:45.74 [7256:7287:0309/222745.748713:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Mar 09, 2025 22:40:09.72 [7256:7256:0309/224009.723032:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 22:40:10.17 [18535:10:0309/224010.169657:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+Mar 09, 2025 22:43:05.22 [7256:7256:0309/224305.229415:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 22:43:13.82 [7256:7256:0309/224313.820494:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 22:51:58.46 [7256:7256:0309/225158.465002:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 22:54:38.22 [7256:7256:0309/225438.222519:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 23:00:06.15 [7256:7256:0309/230006.158124:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 23:06:31.14 [7256:7256:0309/230631.140831:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 09, 2025 23:17:22.70 [7306:7306:0309/231722.698335:ERROR:shared_image_manager.cc(249)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+Mar 10, 2025 24:04:27.26 [7256:7287:0310/000427.263507:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 10, 2025 24:04:52.14 [7256:7287:0310/000452.146957:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 10, 2025 24:05:33.34 [7256:7287:0310/000533.340344:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 10, 2025 24:07:18.82 [7256:7287:0310/000718.827903:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 10, 2025 24:10:03.99 [7256:7287:0310/001003.990760:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 10, 2025 24:17:54.71 [7256:7287:0310/001754.718973:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Mar 10, 2025 04:38:16.65 [7306:7306:0310/043816.655957:ERROR:shared_image_manager.cc(249)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+Mar 10, 2025 04:53:25.71 [7306:7306:0310/045325.713088:ERROR:shared_image_manager.cc(249)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+Mar 10, 2025 09:29:53.32 [30182:16:0310/092953.324040:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+Mar 10, 2025 09:29:53.45 [30182:16:0310/092953.453070:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+Mar 10, 2025 09:29:53.46 [30182:16:0310/092953.461032:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+Mar 10, 2025 10:13:32.60 [7256:7256:0310/101332.607267:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+Mar 10, 2025 10:28:48.89 [7256:7256:0310/102848.894104:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 10, 2025 11:11:32.80 [7256:7256:0310/111132.802256:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+Mar 10, 2025 11:26:24.01 [7256:7256:0310/112624.016167:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+Mar 10, 2025 12:04:27.54 [7256:7287:0310/120427.549382:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+
+Mar 10, 2025 12:08:01.97 NEW SESSION
+Mar 10, 2025 12:08:01.99 Opening in existing browser session.
+Mar 10, 2025 12:10:29.16 Opening in existing browser session.
+Mar 10, 2025 12:19:31.96 Opening in existing browser session.
+Mar 10, 2025 12:22:03.93 Opening in existing browser session.
+Mar 10, 2025 12:23:51.44 Opening in existing browser session.
+Mar 10, 2025 12:26:50.27 Opening in existing browser session.
+Mar 10, 2025 12:35:21.38 Opening in existing browser session.
+Mar 10, 2025 12:38:03.16 Opening in existing browser session.
+Mar 10, 2025 12:42:33.13 Opening in existing browser session.
+Mar 10, 2025 12:45:47.21 Opening in existing browser session.
+Mar 10, 2025 12:54:48.47 Opening in existing browser session.
+Mar 10, 2025 12:59:49.72 Opening in existing browser session.
+
+Mar 10, 2025 13:04:15.88 NEW SESSION
+Mar 10, 2025 13:04:15.93 Opening in existing browser session.
+Mar 10, 2025 13:13:24.75 Opening in existing browser session.
+Mar 10, 2025 13:14:30.65 Opening in existing browser session.
+Mar 10, 2025 13:24:38.31 Opening in existing browser session.
+Mar 10, 2025 13:31:45.90 Opening in existing browser session.
+Mar 10, 2025 13:39:39.93 Opening in existing browser session.
+Mar 10, 2025 15:35:55.54 Opening in existing browser session.
+
+Mar 10, 2025 16:10:52.10 NEW SESSION
+Mar 10, 2025 16:10:52.12 Opening in existing browser session.
+Mar 10, 2025 16:19:10.45 Opening in existing browser session.
+Mar 10, 2025 17:52:33.29 Opening in existing browser session.
+
+Mar 10, 2025 19:02:05.11 NEW SESSION
+Mar 10, 2025 19:02:05.13 Opening in existing browser session.
+Mar 10, 2025 19:19:15.37 Opening in existing browser session.
+Mar 10, 2025 19:57:56.62 Opening in existing browser session.
+Mar 10, 2025 19:58:52.51 Opening in existing browser session.

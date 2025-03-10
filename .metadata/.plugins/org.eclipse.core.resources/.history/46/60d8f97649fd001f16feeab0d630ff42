@@ -1,0 +1,91 @@
+package org.prudvi.geeks;
+
+
+
+import com.itextpdf.kernel.pdf.*;
+import com.itextpdf.kernel.utils.PdfMerger;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class PdfMergerExample {
+
+    public static void main(String[] args) {
+        // Folder containing the PDFs to merge
+        String inputFolderPath = "res/pdf/partOfSpeech";
+        // Output file
+        String outputPdfPath = "res/pdf/english_grammer.pdf";
+
+        File inputFolder = new File(inputFolderPath);
+
+        // Check if the folder exists and is a directory
+        if (!inputFolder.exists() || !inputFolder.isDirectory()) {
+            System.err.println("Invalid folder path: " + inputFolderPath);
+            return;
+        }
+
+        // List all PDF files in the folder
+        File[] pdfFiles = inputFolder.listFiles((dir, name) -> name.endsWith(".pdf"));
+        if (pdfFiles == null || pdfFiles.length == 0) {
+            System.out.println("No PDF files found in the folder.");
+            return;
+        }
+        
+     // Sort files numerically by extracting numbers from filenames
+        Arrays.sort(pdfFiles, (f1, f2) -> extractNumber(f1.getName()) - extractNumber(f2.getName()));
+
+
+        // Create the output directory if it doesn't exist
+       /* File outputDir = new File("res/merged");
+        if (!outputDir.exists()) {
+            outputDir.mkdirs();
+        }*/
+
+        try (PdfWriter writer = new PdfWriter(outputPdfPath);
+             PdfDocument mergedPdf = new PdfDocument(writer)) {
+            
+            PdfMerger pdfMerger = new PdfMerger(mergedPdf);
+
+            // Merge each PDF file
+            for (File pdfFile : pdfFiles) {
+            	
+            	if (pdfFile.length() == 0) {
+            	    System.err.println("File is empty: " + pdfFile.getName());
+            	    continue; // Skip empty files
+            	}
+
+                try (PdfReader reader = new PdfReader(pdfFile)) {
+                    PdfDocument pdfDoc = new PdfDocument(reader);
+                    pdfMerger.merge(pdfDoc, 1, pdfDoc.getNumberOfPages());
+                    pdfDoc.close();
+
+                    System.out.println("Merged: " + pdfFile.getName());
+                } catch (IOException e) {
+                    System.err.println("Error reading file: " + pdfFile.getName() + " - " + e.getMessage());
+                }
+            }
+
+            System.out.println("All PDFs merged into: " + outputPdfPath);
+
+        } catch (FileNotFoundException e) {
+            System.err.println("Output file not found: " + e.getMessage());
+        } catch (IOException e) {
+            System.err.println("Error merging PDFs: " + e.getMessage());
+        }
+    }
+    
+    
+    // Extract numbers from filenames for sorting
+    private static int extractNumber(String name) {
+        Pattern pattern = Pattern.compile("\\d+");
+        Matcher matcher = pattern.matcher(name);
+        if (matcher.find()) {
+            return Integer.parseInt(matcher.group());
+        }
+        return 0; // Default to 0 if no number is found
+    }
+}
