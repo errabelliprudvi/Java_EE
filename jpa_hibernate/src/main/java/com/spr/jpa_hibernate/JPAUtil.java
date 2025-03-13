@@ -12,7 +12,8 @@ public class JPAUtil {
         return emf;
     }
 
-    public static void close() {
+    public static void close() 
+    {
         emf.close();
     }
 }

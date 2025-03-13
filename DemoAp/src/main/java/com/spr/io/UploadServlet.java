@@ -17,7 +17,7 @@ public class UploadServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Part filePart = req.getPart("file");
         String fileName = filePart.getSubmittedFileName();
-        String uploadPath = "C:/uploads/" + fileName;
+        String uploadPath = "/home/prudvi/Downloads/uploads/" + fileName;
 
         filePart.write(uploadPath);
         resp.getWriter().write("File uploaded successfully: " + fileName);

@@ -16,7 +16,7 @@ public class DownloadServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String fileName = req.getParameter("file");
-        File file = new File("C:/uploads/" + fileName);
+        File file = new File("/home/prudvi/Downloads/" + fileName);
 
         if (file.exists()) {
             resp.setContentType("application/octet-stream");
